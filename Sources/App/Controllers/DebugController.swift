@@ -4,16 +4,13 @@ import Logging
 
 final class DebugController {
     
-//    public let logger: ConsoleLogger
-//
-//    public init() {
-//        logger = ConsoleLogger()
-//    }
     func index(_ req: Request) throws -> String {
         
         
-        let console = try req.make(Console.self)
-        console.print("Hello************************************************")
+//        let console = try req.make(Console.self)
+//        console.print("Hello************************************************")
+//
+//        console.print(Environment.get("HOME")!)
         
         return "Debug Info:...tbd"
     }
