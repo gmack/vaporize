@@ -1,8 +1,20 @@
 import Vapor
+import Console
+import Logging
 
 final class DebugController {
-    /// Returns a list of all `Todo`s.
+    
+//    public let logger: ConsoleLogger
+//
+//    public init() {
+//        logger = ConsoleLogger()
+//    }
     func index(_ req: Request) throws -> String {
+        
+        
+        let console = try req.make(Console.self)
+        console.print("Hello************************************************")
+        
         return "Debug Info:...tbd"
     }
     
